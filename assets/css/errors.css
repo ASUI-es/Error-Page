@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --fondo: #f7f7f7;
+    --color-defecto-p:#444;
+    --color-p: #9aa0a6;
+    --fondo-separador: #e0e0e0;
+    --color-h1: #3c4043;
+    --size-p-mobile: 1rem;
+    --size-h1-mobile: 28px;
+    --size-p-tablet: 17px;
+    --size-h1-tablet: 34px;
+    --size-p-desktop: 18px;
+    --size-h1-desktop: 40px;
+    
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: var(--fondo);
+    color: var(--color-defecto-p);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+h1{
+    font-size: var(--size-h1-mobile);
+    color: var(--color-h1);
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: var(--size-p-mobile);
+    line-height:1.5;
+}
+
+/*HEADER*/
+header{
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.status{
+    letter-spacing: 2px;
+    color: var(--color-p);
+}
+
+/*MAIN*/
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-container{
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.server-img{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    margin-bottom: 24px;
+}
+
+.separator{
+    height: 1px;
+    background: var(--fondo-separador);
+    margin: 25px 0;   
+}
+
+/*FOOTER*/
+
+footer{
+    text-align: center;
+    padding: 20px;
+    color: var(--color-p);
+}
+
+
+/*Tablet*/
+@media(min-width:768px){
+    body{
+        padding: 25px;
+    }
+    h1{
+        font-size: var(--size-h1-tablet);
+    }
+    p{
+        font-size: var(--size-p-tablet);
+    }
+    .server-img{
+        max-width: 450px;
+    }
+}
+
+/*Desktop*/
+@media(min-width:1024px){
+    .error-container{
+        max-width: 750px;
+    }
+    h1{
+        font-size: var(--size-h1-desktop);
+    }
+    p{
+        font-size: var(--size-p-desktop);
+    }
+    .server-img{
+        max-width: 520px;
+    }
+}
