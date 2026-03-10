@@ -20,7 +20,7 @@
 }
 
 body{
-    font-family: 'Tahoma',sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     background: var(--fondo);
     color: var(--color-defecto-p);
     display: flex;
@@ -60,15 +60,22 @@ main{
 }
 
 .status{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.status p{
     letter-spacing: 2px;
     color: var(--color-p);
     padding: 20px 10px;
 }
 
 .error-container{
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
+    width: 600px;
+    /* max-width: 600px; */
+    text-align: justify;
 }
 
 .server-img{
