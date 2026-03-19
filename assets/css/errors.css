@@ -75,7 +75,7 @@ main{
 .error-container{
     width: 600px;
     /* max-width: 600px; */
-    text-align: justify;
+    text-align: center;
 }
 
 .server-img{
